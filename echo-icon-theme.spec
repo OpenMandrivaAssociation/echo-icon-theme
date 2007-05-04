@@ -1,4 +1,4 @@
-%define alphatag 20070314wiki
+%define alphatag 20070419wiki
 
 Name:           echo-icon-theme
 Version:        0.2
