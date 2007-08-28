@@ -1,4 +1,4 @@
-%define alphatag 20070419wiki
+%define alphatag 20070427wiki
 
 Name:           echo-icon-theme
 Version:        0.2
@@ -9,6 +9,7 @@ Group:          Graphical desktop/Other
 License:        Creative Commons Attribution-ShareAlike 2.5
 URL:            http://fedoraproject.org/wiki/Artwork/EchoDevelopment
 Source0:        %{name}-%{version}-%{alphatag}.tar.bz2
+Patch0:		contexts.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch:      noarch
 Requires(post): gtk2 >= 2.6.0
@@ -20,6 +21,7 @@ This package contains the Echo icon theme from Fedora 7.
 
 %prep
 %setup -q -n %{name}-%{version}-%{alphatag}
+%patch0 -p1
 
 %build
 
