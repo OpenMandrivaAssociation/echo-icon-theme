@@ -2,7 +2,7 @@
 
 Name:           echo-icon-theme
 Version:        0.3
-Release:        0.%{alphatag}.1
+Release:        %mkrel 0.%{alphatag}.1
 Summary:        Echo icon theme
 
 Group:          Graphical desktop/Other
