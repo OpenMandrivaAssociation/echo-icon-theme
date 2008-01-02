@@ -9,6 +9,7 @@ Group:          Graphical desktop/Other
 License:        Creative Commons Attribution-ShareAlike 3.0
 URL:            http://fedoraproject.org/wiki/Artwork/EchoDevelopment
 Source0:        %{name}-%{version}-%{alphatag}.tar.bz2
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch:      noarch
 Requires(post): gtk2 >= 2.6.0
 Requires(postun): gtk2 >= 2.6.0
