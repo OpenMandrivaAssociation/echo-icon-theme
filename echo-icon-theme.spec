@@ -1,27 +1,27 @@
-%define alphatag git
-
 Name:           echo-icon-theme
-Version:        0.3
-Release:        %mkrel 0.%{alphatag}.1
+Version:        0.3.1
+Release:        %mkrel 1
 Summary:        Echo icon theme
 
 Group:          Graphical desktop/Other
 License:        Creative Commons Attribution-ShareAlike 3.0
 URL:            http://fedoraproject.org/wiki/Artwork/EchoDevelopment
-Source0:        %{name}-%{version}-%{alphatag}.tar.bz2
+Source0:        %{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch:      noarch
 Requires(post): gtk2 >= 2.6.0
 Requires(postun): gtk2 >= 2.6.0
+Requires:       gnome-icon-theme
+
+#for Clearlooks icon theme dependency
+Requires:       gnome-themes
 
 %description
 This package contains the Echo icon theme from Fedora.
 
 
 %prep
-%setup -q -n %{name}-%{version}-%{alphatag}
-
-%{__sed} -r 's/Fixed/Threshold/' -i Echo/index.theme
+%setup -q -n %{name}-%{version}
 
 %build
 
