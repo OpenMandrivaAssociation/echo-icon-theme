@@ -30,6 +30,7 @@ This package contains the Echo icon theme from Fedora.
 
 %build
 %configure2_5x
+%make
 
 %install
 rm -rf %{buildroot}
