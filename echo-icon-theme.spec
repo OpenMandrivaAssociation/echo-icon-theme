@@ -1,5 +1,5 @@
-%define git_head 1c213a2
-%define checkout 20080803
+%define git_head 3e5f61d
+%define checkout 20080828
 %define alphatag %{checkout}git%{git_head}
 
 Name:           echo-icon-theme
