@@ -1,10 +1,10 @@
-%define git_head 3e5f61d
-%define checkout 20080828
+%define git_head cc6da5b
+%define checkout 20081003
 %define alphatag %{checkout}git%{git_head}
 
 Name:           echo-icon-theme
 Version:        0.3.89.0
-Release:        %mkrel 0.8.%{alphatag}.1
+Release:        %mkrel 0.11.%{alphatag}.1
 Summary:        Echo icon theme
 
 Group:          Graphical desktop/Other
