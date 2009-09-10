@@ -4,7 +4,7 @@
 
 Name:           echo-icon-theme
 Version:        0.3.89.0
-Release:        %mkrel 0.11.%{alphatag}.1
+Release:        %mkrel 0.11.%{alphatag}.2
 Summary:        Echo icon theme
 
 Group:          Graphical desktop/Other
