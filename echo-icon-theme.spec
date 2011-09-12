@@ -4,7 +4,7 @@
 
 Name:           echo-icon-theme
 Version:        0.3.89.0
-Release:        %mkrel 0.11.%{alphatag}.2
+Release:        %mkrel 0.11.%{alphatag}.3
 Summary:        Echo icon theme
 
 Group:          Graphical desktop/Other
@@ -29,6 +29,7 @@ This package contains the Echo icon theme from Fedora.
 %prep
 %setup -q -n %{name}-%version
 %patch -p1 -b .icon-naming
+
 %{_bindir}/autoreconf --install
 
 %build
