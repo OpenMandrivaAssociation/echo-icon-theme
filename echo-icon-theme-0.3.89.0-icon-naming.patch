@@ -1,0 +1,84 @@
+diff -p -up echo-icon-theme-0.3.89.0/16x16/actions/Makefile.am.icon-naming echo-icon-theme-0.3.89.0/16x16/actions/Makefile.am
+--- echo-icon-theme-0.3.89.0/16x16/actions/Makefile.am.icon-naming	2008-10-03 23:31:15.000000000 +0200
++++ echo-icon-theme-0.3.89.0/16x16/actions/Makefile.am	2008-10-15 16:09:41.000000000 +0200
+@@ -82,8 +82,6 @@ MAINTAINERCLEANFILES = Makefile.in
+ 
+ install-data-local: install-iconsDATA
+ 	(cd $(DESTDIR)$(themedir)/$(size) && $(ICONMAP) -c $(context))
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok.png gtk-ok.png)
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-no.png gtk-no.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok-apply.png gtk-apply.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-yes.png gtk-yes.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) help-information.png gtk-info.png)
+diff -p -up echo-icon-theme-0.3.89.0/22x22/actions/Makefile.am.icon-naming echo-icon-theme-0.3.89.0/22x22/actions/Makefile.am
+--- echo-icon-theme-0.3.89.0/22x22/actions/Makefile.am.icon-naming	2008-10-15 16:12:57.000000000 +0200
++++ echo-icon-theme-0.3.89.0/22x22/actions/Makefile.am	2008-10-15 16:15:54.000000000 +0200
+@@ -68,8 +68,6 @@ MAINTAINERCLEANFILES = Makefile.in
+ 
+ install-data-local: install-iconsDATA
+ 	(cd $(DESTDIR)$(themedir)/$(size) && $(ICONMAP) -c $(context))
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-no.png gtk-no.png)
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok.png gtk-ok.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok-apply.png gtk-apply.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-yes.png gtk-yes.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) help-information.png gtk-info.png)
+diff -p -up echo-icon-theme-0.3.89.0/24x24/actions/Makefile.am.icon-naming echo-icon-theme-0.3.89.0/24x24/actions/Makefile.am
+--- echo-icon-theme-0.3.89.0/24x24/actions/Makefile.am.icon-naming	2008-10-03 23:31:37.000000000 +0200
++++ echo-icon-theme-0.3.89.0/24x24/actions/Makefile.am	2008-10-15 16:09:28.000000000 +0200
+@@ -95,8 +95,6 @@ MAINTAINERCLEANFILES = Makefile.in
+ 
+ install-data-local: install-iconsDATA
+ 	(cd $(DESTDIR)$(themedir)/$(size) && $(ICONMAP) -c $(context))
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok.png gtk-ok.png)
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-no.png gtk-no.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok-apply.png gtk-apply.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-yes.png gtk-yes.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) help-information.png gtk-info.png)
+diff -p -up echo-icon-theme-0.3.89.0/256x256/actions/Makefile.am.icon-naming echo-icon-theme-0.3.89.0/256x256/actions/Makefile.am
+--- echo-icon-theme-0.3.89.0/256x256/actions/Makefile.am.icon-naming	2008-10-15 16:13:07.000000000 +0200
++++ echo-icon-theme-0.3.89.0/256x256/actions/Makefile.am	2008-10-15 16:16:17.000000000 +0200
+@@ -42,8 +42,6 @@ MAINTAINERCLEANFILES = Makefile.in
+ 
+ install-data-local: install-iconsDATA
+ 	(cd $(DESTDIR)$(themedir)/$(size) && $(ICONMAP) -c $(context))
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-no.png gtk-no.png)
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok.png gtk-ok.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok-apply.png gtk-apply.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-yes.png gtk-yes.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) help-information.png gtk-info.png)
+diff -p -up echo-icon-theme-0.3.89.0/32x32/actions/Makefile.am.icon-naming echo-icon-theme-0.3.89.0/32x32/actions/Makefile.am
+--- echo-icon-theme-0.3.89.0/32x32/actions/Makefile.am.icon-naming	2008-10-15 16:13:15.000000000 +0200
++++ echo-icon-theme-0.3.89.0/32x32/actions/Makefile.am	2008-10-15 16:16:06.000000000 +0200
+@@ -68,8 +68,6 @@ MAINTAINERCLEANFILES = Makefile.in
+ 
+ install-data-local: install-iconsDATA
+ 	(cd $(DESTDIR)$(themedir)/$(size) && $(ICONMAP) -c $(context))
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-no.png gtk-no.png)
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok.png gtk-ok.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok-apply.png gtk-apply.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-yes.png gtk-yes.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) help-information.png gtk-info.png)
+diff -p -up echo-icon-theme-0.3.89.0/48x48/actions/Makefile.am.icon-naming echo-icon-theme-0.3.89.0/48x48/actions/Makefile.am
+--- echo-icon-theme-0.3.89.0/48x48/actions/Makefile.am.icon-naming	2008-10-03 23:32:14.000000000 +0200
++++ echo-icon-theme-0.3.89.0/48x48/actions/Makefile.am	2008-10-15 16:09:23.000000000 +0200
+@@ -113,8 +113,6 @@ MAINTAINERCLEANFILES = Makefile.in
+ 
+ install-data-local: install-iconsDATA
+ 	(cd $(DESTDIR)$(themedir)/$(size) && $(ICONMAP) -c $(context))
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok.png gtk-ok.png)
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-no.png gtk-no.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok-apply.png gtk-apply.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-yes.png gtk-yes.png)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) help-information.png gtk-info.png)
+diff -p -up echo-icon-theme-0.3.89.0/scalable/actions/Makefile.am.icon-naming echo-icon-theme-0.3.89.0/scalable/actions/Makefile.am
+--- echo-icon-theme-0.3.89.0/scalable/actions/Makefile.am.icon-naming	2008-10-03 23:32:25.000000000 +0200
++++ echo-icon-theme-0.3.89.0/scalable/actions/Makefile.am	2008-10-15 16:08:34.000000000 +0200
+@@ -113,8 +113,6 @@ MAINTAINERCLEANFILES = Makefile.in
+ 
+ install-data-local: install-iconsDATA
+ 	(cd $(DESTDIR)$(themedir)/$(size) && $(ICONMAP) -c $(context))
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok.svg gtk-ok.svg)
+-	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-no.svg gtk-no.svg)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-ok-apply.svg gtk-apply.svg)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) dialog-yes.svg gtk-yes.svg)
+ 	(cd $(DESTDIR)$(themedir)/$(size)/$(context) && $(LN_S) help-information.svg gtk-info.svg)
