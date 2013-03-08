@@ -16,6 +16,7 @@ BuildArch:	noarch
 Requires(post):	gtk2 >= 2.6.0
 Requires(postun):	gtk2 >= 2.6.0
 BuildRequires:	icon-naming-utils >= 0.8.7
+BuildRequires:	perl(XML::SAX)
 Requires:	gnome-icon-theme
 
 #for Clearlooks icon theme dependency
