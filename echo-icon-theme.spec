@@ -2,25 +2,24 @@
 %define checkout 20081003
 %define alphatag %{checkout}git%{git_head}
 
-Name:           echo-icon-theme
-Version:        0.3.89.0
-Release:        %mkrel 0.11.%{alphatag}.3
-Summary:        Echo icon theme
+Name:		echo-icon-theme
+Version:	0.3.89.0
+Release:	0.11.%{alphatag}.4
+Summary:	Echo icon theme
 
-Group:          Graphical desktop/Other
-License:        CC-BY-SA
-URL:            http://fedoraproject.org/wiki/Artwork/EchoDevelopment
-Source0:        %{name}-%{version}.tar.bz2
-Patch:		echo-icon-theme-0.3.89.0-icon-naming.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
-BuildArch:      noarch
-Requires(post): gtk2 >= 2.6.0
-Requires(postun): gtk2 >= 2.6.0
-BuildRequires: icon-naming-utils >= 0.8.7
-Requires:       gnome-icon-theme
+Group:		Graphical desktop/Other
+License:	CC-BY-SA
+URL:		http://fedoraproject.org/wiki/Artwork/EchoDevelopment
+Source0:	%{name}-%{version}.tar.bz2
+Patch0:		echo-icon-theme-0.3.89.0-icon-naming.patch
+BuildArch:	noarch
+Requires(post):	gtk2 >= 2.6.0
+Requires(postun):	gtk2 >= 2.6.0
+BuildRequires:	icon-naming-utils >= 0.8.7
+Requires:	gnome-icon-theme
 
 #for Clearlooks icon theme dependency
-Requires:       gnome-themes
+Requires:	gnome-themes
 
 %description
 This package contains the Echo icon theme from Fedora.
@@ -28,7 +27,7 @@ This package contains the Echo icon theme from Fedora.
 
 %prep
 %setup -q -n %{name}-%version
-%patch -p1 -b .icon-naming
+%patch0 -p1 -b .icon-naming
 
 %{_bindir}/autoreconf --install
 
@@ -37,7 +36,6 @@ This package contains the Echo icon theme from Fedora.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 touch %{buildroot}%{_datadir}/icons/Echo/icon-theme.cache
 
@@ -46,9 +44,6 @@ touch %{buildroot}%{_datadir}/icons/Echo/icon-theme.cache
 
 %postun
 %clean_icon_cache Echo
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
