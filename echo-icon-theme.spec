@@ -9,7 +9,7 @@ Summary:	Echo icon theme
 
 Group:		Graphical desktop/Other
 License:	CC-BY-SA
-URL:		http://fedoraproject.org/wiki/Artwork/EchoDevelopment
+URL:		https://fedoraproject.org/wiki/Artwork/EchoDevelopment
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		echo-icon-theme-0.3.89.0-icon-naming.patch
 BuildArch:	noarch
