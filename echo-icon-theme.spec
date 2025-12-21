@@ -15,6 +15,11 @@ Patch0:		echo-icon-theme-0.3.89.0-icon-naming.patch
 BuildArch:	noarch
 Requires(post):	gtk2 >= 2.6.0
 Requires(postun):	gtk2 >= 2.6.0
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	icon-naming-utils >= 0.8.7
 BuildRequires:	perl(XML::SAX)
 Requires:	gnome-icon-theme
